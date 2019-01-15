@@ -28,7 +28,7 @@ APPLICATION_NAME = 'Python OCR'
 app = Flask(__name__)
 
 #DB connection
-app.config['SQLALCHEMY_DATABASE_URI'] =  'mysql+pymysql://cosmetic:Mysqlpn102!@192.168.56.101/CosmeticDB'
+app.config['SQLALCHEMY_DATABASE_URI'] =  'mysql+pymysql://[user]:[password]@[ip]/[db]'
 db = SQLAlchemy(app)
 class urcosmeTest(db.Model):
     __tablename__ = 'urcosmeTest'
